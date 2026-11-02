@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #080c14;
+    color: #e2e8f0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    overflow: hidden;
+  }
+
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f172a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+}
+
+.cad-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.blueprint-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(14, 165, 233, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 165, 233, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.25);
+}
+
+.glow-orange {
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.25);
+}
+
